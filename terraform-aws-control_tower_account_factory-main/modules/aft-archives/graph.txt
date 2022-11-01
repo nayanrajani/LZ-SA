@@ -1,0 +1,44 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] data.archive_file.builder (expand)" [label = "data.archive_file.builder", shape = "box"]
+		"[root] data.archive_file.customizations (expand)" [label = "data.archive_file.customizations", shape = "box"]
+		"[root] data.archive_file.feature_options (expand)" [label = "data.archive_file.feature_options", shape = "box"]
+		"[root] data.archive_file.provisioning_framework (expand)" [label = "data.archive_file.provisioning_framework", shape = "box"]
+		"[root] data.archive_file.request_framework (expand)" [label = "data.archive_file.request_framework", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/archive\"]" [label = "provider[\"registry.terraform.io/hashicorp/archive\"]", shape = "diamond"]
+		"[root] data.archive_file.builder (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/archive\"]"
+		"[root] data.archive_file.customizations (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/archive\"]"
+		"[root] data.archive_file.feature_options (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/archive\"]"
+		"[root] data.archive_file.provisioning_framework (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/archive\"]"
+		"[root] data.archive_file.request_framework (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/archive\"]"
+		"[root] output.builder_archive_hash (expand)" -> "[root] data.archive_file.builder (expand)"
+		"[root] output.builder_archive_path (expand)" -> "[root] data.archive_file.builder (expand)"
+		"[root] output.customizations_archive_hash (expand)" -> "[root] data.archive_file.customizations (expand)"
+		"[root] output.customizations_archive_path (expand)" -> "[root] data.archive_file.customizations (expand)"
+		"[root] output.feature_options_archive_hash (expand)" -> "[root] data.archive_file.feature_options (expand)"
+		"[root] output.feature_options_archive_path (expand)" -> "[root] data.archive_file.feature_options (expand)"
+		"[root] output.provisioning_framework_archive_hash (expand)" -> "[root] data.archive_file.provisioning_framework (expand)"
+		"[root] output.provisioning_framework_archive_path (expand)" -> "[root] data.archive_file.provisioning_framework (expand)"
+		"[root] output.request_framework_archive_hash (expand)" -> "[root] data.archive_file.request_framework (expand)"
+		"[root] output.request_framework_archive_path (expand)" -> "[root] data.archive_file.request_framework (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/archive\"] (close)" -> "[root] data.archive_file.builder (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/archive\"] (close)" -> "[root] data.archive_file.customizations (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/archive\"] (close)" -> "[root] data.archive_file.feature_options (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/archive\"] (close)" -> "[root] data.archive_file.provisioning_framework (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/archive\"] (close)" -> "[root] data.archive_file.request_framework (expand)"
+		"[root] root" -> "[root] output.builder_archive_hash (expand)"
+		"[root] root" -> "[root] output.builder_archive_path (expand)"
+		"[root] root" -> "[root] output.customizations_archive_hash (expand)"
+		"[root] root" -> "[root] output.customizations_archive_path (expand)"
+		"[root] root" -> "[root] output.feature_options_archive_hash (expand)"
+		"[root] root" -> "[root] output.feature_options_archive_path (expand)"
+		"[root] root" -> "[root] output.provisioning_framework_archive_hash (expand)"
+		"[root] root" -> "[root] output.provisioning_framework_archive_path (expand)"
+		"[root] root" -> "[root] output.request_framework_archive_hash (expand)"
+		"[root] root" -> "[root] output.request_framework_archive_path (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/archive\"] (close)"
+	}
+}
+

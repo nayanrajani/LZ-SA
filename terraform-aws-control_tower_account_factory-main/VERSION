@@ -1,0 +1,19 @@
+1.6.6
+
+######
+# As of version 1.6.0, AFT collects anonymous operational metrics to help AWS improve the quality and # features of the solution. For more information, including how to disable this capability, please # # see the documentation here.
+
+# Requirements
+# Name	Version
+# terraform	>= 0.15.1, < 2.0.0
+# aws	>= 4.9.0, < 5.0.0
+# 
+# Providers
+# Name	Version
+# aws	>= 4.9.0, < 5.0.0
+# local	n/a
+
+# - Note
+# Versions of AFT prior to 1.6.0 do not report usage metrics to AWS.
+# more info- https://docs.aws.amazon.com/controltower/latest/userguide/aft-operational-metrics.html
+######

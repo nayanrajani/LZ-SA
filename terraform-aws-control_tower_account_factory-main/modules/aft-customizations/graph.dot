@@ -1,0 +1,280 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_cloudwatch_log_group.aft_account_customizations_api_helpers (expand)" [label = "aws_cloudwatch_log_group.aft_account_customizations_api_helpers", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_account_customizations_terraform (expand)" [label = "aws_cloudwatch_log_group.aft_account_customizations_terraform", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_create_pipeline (expand)" [label = "aws_cloudwatch_log_group.aft_create_pipeline", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_customizations_identify_targets (expand)" [label = "aws_cloudwatch_log_group.aft_customizations_identify_targets", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_customizations_invoke_account_provisioning (expand)" [label = "aws_cloudwatch_log_group.aft_customizations_invoke_account_provisioning", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_execute_pipeline (expand)" [label = "aws_cloudwatch_log_group.aft_execute_pipeline", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_get_pipeline_executions (expand)" [label = "aws_cloudwatch_log_group.aft_get_pipeline_executions", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_global_customizations_api_helpers (expand)" [label = "aws_cloudwatch_log_group.aft_global_customizations_api_helpers", shape = "box"]
+		"[root] aws_cloudwatch_log_group.aft_global_customizations_terraform (expand)" [label = "aws_cloudwatch_log_group.aft_global_customizations_terraform", shape = "box"]
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" [label = "aws_codebuild_project.aft_account_customizations_terraform", shape = "box"]
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" [label = "aws_codebuild_project.aft_create_pipeline", shape = "box"]
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" [label = "aws_codebuild_project.aft_global_customizations_terraform", shape = "box"]
+		"[root] aws_iam_role.aft_codebuild_customizations_role (expand)" [label = "aws_iam_role.aft_codebuild_customizations_role", shape = "box"]
+		"[root] aws_iam_role.aft_codepipeline_customizations_role (expand)" [label = "aws_iam_role.aft_codepipeline_customizations_role", shape = "box"]
+		"[root] aws_iam_role.aft_customizations_execute_pipeline_lambda (expand)" [label = "aws_iam_role.aft_customizations_execute_pipeline_lambda", shape = "box"]
+		"[root] aws_iam_role.aft_customizations_get_pipeline_executions_lambda (expand)" [label = "aws_iam_role.aft_customizations_get_pipeline_executions_lambda", shape = "box"]
+		"[root] aws_iam_role.aft_customizations_identify_targets_lambda (expand)" [label = "aws_iam_role.aft_customizations_identify_targets_lambda", shape = "box"]
+		"[root] aws_iam_role.aft_invoke_customizations_sfn (expand)" [label = "aws_iam_role.aft_invoke_customizations_sfn", shape = "box"]
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" [label = "aws_iam_role_policy.aft_codebuild_customizations_policy", shape = "box"]
+		"[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)" [label = "aws_iam_role_policy.aft_codepipeline_customizations_policy", shape = "box"]
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" [label = "aws_iam_role_policy.aft_execute_pipeline_lambda", shape = "box"]
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" [label = "aws_iam_role_policy.aft_get_pipeline_executions_lambda", shape = "box"]
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" [label = "aws_iam_role_policy.aft_identify_targets_lambda", shape = "box"]
+		"[root] aws_iam_role_policy.aft_invoke_customizations_sfn (expand)" [label = "aws_iam_role_policy.aft_invoke_customizations_sfn", shape = "box"]
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" [label = "aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_execute_pipeline_lambda (expand)" [label = "aws_iam_role_policy_attachment.aft_execute_pipeline_lambda", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_get_pipeline_executions_lambda (expand)" [label = "aws_iam_role_policy_attachment.aft_get_pipeline_executions_lambda", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_identify_targets_lambda (expand)" [label = "aws_iam_role_policy_attachment.aft_identify_targets_lambda", shape = "box"]
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" [label = "aws_lambda_function.aft_customizations_execute_pipeline", shape = "box"]
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" [label = "aws_lambda_function.aft_customizations_get_pipeline_executions", shape = "box"]
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" [label = "aws_lambda_function.aft_customizations_identify_targets", shape = "box"]
+		"[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)" [label = "aws_s3_bucket.aft_codepipeline_customizations_bucket", shape = "box"]
+		"[root] aws_s3_bucket_acl.aft-codepipeline-customizations-bucket-acl (expand)" [label = "aws_s3_bucket_acl.aft-codepipeline-customizations-bucket-acl", shape = "box"]
+		"[root] aws_s3_bucket_server_side_encryption_configuration.aft-codepipeline-customizations-bucket-encryption (expand)" [label = "aws_s3_bucket_server_side_encryption_configuration.aft-codepipeline-customizations-bucket-encryption", shape = "box"]
+		"[root] aws_s3_bucket_versioning.aft-codepipeline-customizations-bucket-versioning (expand)" [label = "aws_s3_bucket_versioning.aft-codepipeline-customizations-bucket-versioning", shape = "box"]
+		"[root] aws_sfn_state_machine.aft_invoke_customizations_sfn (expand)" [label = "aws_sfn_state_machine.aft_invoke_customizations_sfn", shape = "box"]
+		"[root] data.aws_caller_identity.aft_management (expand)" [label = "data.aws_caller_identity.aft_management", shape = "box"]
+		"[root] data.aws_caller_identity.current (expand)" [label = "data.aws_caller_identity.current", shape = "box"]
+		"[root] data.aws_iam_policy.AWSLambdaBasicExecutionRole (expand)" [label = "data.aws_iam_policy.AWSLambdaBasicExecutionRole", shape = "box"]
+		"[root] data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole (expand)" [label = "data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole", shape = "box"]
+		"[root] data.aws_partition.current (expand)" [label = "data.aws_partition.current", shape = "box"]
+		"[root] data.aws_region.aft_management (expand)" [label = "data.aws_region.aft_management", shape = "box"]
+		"[root] data.aws_region.current (expand)" [label = "data.aws_region.current", shape = "box"]
+		"[root] data.local_file.aft_account_customizations_terraform (expand)" [label = "data.local_file.aft_account_customizations_terraform", shape = "box"]
+		"[root] data.local_file.aft_create_pipeline (expand)" [label = "data.local_file.aft_create_pipeline", shape = "box"]
+		"[root] data.local_file.aft_global_customizations_terraform (expand)" [label = "data.local_file.aft_global_customizations_terraform", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"]" [label = "provider[\"registry.terraform.io/hashicorp/local\"]", shape = "diamond"]
+		"[root] var.account_request_table_name" [label = "var.account_request_table_name", shape = "note"]
+		"[root] var.aft_common_layer_arn" [label = "var.aft_common_layer_arn", shape = "note"]
+		"[root] var.aft_config_backend_bucket_id" [label = "var.aft_config_backend_bucket_id", shape = "note"]
+		"[root] var.aft_config_backend_kms_key_id" [label = "var.aft_config_backend_kms_key_id", shape = "note"]
+		"[root] var.aft_config_backend_table_id" [label = "var.aft_config_backend_table_id", shape = "note"]
+		"[root] var.aft_failure_sns_topic_arn" [label = "var.aft_failure_sns_topic_arn", shape = "note"]
+		"[root] var.aft_kms_key_arn" [label = "var.aft_kms_key_arn", shape = "note"]
+		"[root] var.aft_kms_key_id" [label = "var.aft_kms_key_id", shape = "note"]
+		"[root] var.aft_sns_topic_arn" [label = "var.aft_sns_topic_arn", shape = "note"]
+		"[root] var.aft_tf_aws_customizations_module_git_ref_ssm_path" [label = "var.aft_tf_aws_customizations_module_git_ref_ssm_path", shape = "note"]
+		"[root] var.aft_tf_aws_customizations_module_url_ssm_path" [label = "var.aft_tf_aws_customizations_module_url_ssm_path", shape = "note"]
+		"[root] var.aft_tf_backend_region_ssm_path" [label = "var.aft_tf_backend_region_ssm_path", shape = "note"]
+		"[root] var.aft_tf_ddb_table_ssm_path" [label = "var.aft_tf_ddb_table_ssm_path", shape = "note"]
+		"[root] var.aft_tf_kms_key_id_ssm_path" [label = "var.aft_tf_kms_key_id_ssm_path", shape = "note"]
+		"[root] var.aft_tf_s3_bucket_ssm_path" [label = "var.aft_tf_s3_bucket_ssm_path", shape = "note"]
+		"[root] var.aft_tf_version_ssm_path" [label = "var.aft_tf_version_ssm_path", shape = "note"]
+		"[root] var.aft_vpc_default_sg" [label = "var.aft_vpc_default_sg", shape = "note"]
+		"[root] var.aft_vpc_id" [label = "var.aft_vpc_id", shape = "note"]
+		"[root] var.aft_vpc_private_subnets" [label = "var.aft_vpc_private_subnets", shape = "note"]
+		"[root] var.cloudwatch_log_group_retention" [label = "var.cloudwatch_log_group_retention", shape = "note"]
+		"[root] var.customizations_archive_hash" [label = "var.customizations_archive_hash", shape = "note"]
+		"[root] var.customizations_archive_path" [label = "var.customizations_archive_path", shape = "note"]
+		"[root] var.global_codebuild_timeout" [label = "var.global_codebuild_timeout", shape = "note"]
+		"[root] var.invoke_account_provisioning_sfn_arn" [label = "var.invoke_account_provisioning_sfn_arn", shape = "note"]
+		"[root] var.maximum_concurrent_customizations" [label = "var.maximum_concurrent_customizations", shape = "note"]
+		"[root] var.request_metadata_table_name" [label = "var.request_metadata_table_name", shape = "note"]
+		"[root] var.terraform_distribution" [label = "var.terraform_distribution", shape = "note"]
+		"[root] aws_cloudwatch_log_group.aft_account_customizations_api_helpers (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.aft_account_customizations_api_helpers (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_account_customizations_terraform (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.aft_account_customizations_terraform (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_create_pipeline (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.aft_create_pipeline (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_customizations_identify_targets (expand)" -> "[root] aws_lambda_function.aft_customizations_identify_targets (expand)"
+		"[root] aws_cloudwatch_log_group.aft_customizations_identify_targets (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_customizations_invoke_account_provisioning (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.aft_customizations_invoke_account_provisioning (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_execute_pipeline (expand)" -> "[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)"
+		"[root] aws_cloudwatch_log_group.aft_execute_pipeline (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_get_pipeline_executions (expand)" -> "[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)"
+		"[root] aws_cloudwatch_log_group.aft_get_pipeline_executions (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_global_customizations_api_helpers (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.aft_global_customizations_api_helpers (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.aft_global_customizations_terraform (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.aft_global_customizations_terraform (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] aws_cloudwatch_log_group.aft_account_customizations_terraform (expand)"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] aws_iam_role.aft_codebuild_customizations_role (expand)"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] data.local_file.aft_account_customizations_terraform (expand)"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] var.aft_vpc_id"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_codebuild_project.aft_account_customizations_terraform (expand)" -> "[root] var.global_codebuild_timeout"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] aws_cloudwatch_log_group.aft_create_pipeline (expand)"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] aws_iam_role.aft_codebuild_customizations_role (expand)"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] data.local_file.aft_create_pipeline (expand)"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_aws_customizations_module_git_ref_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_aws_customizations_module_url_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_backend_region_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_ddb_table_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_kms_key_id_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_s3_bucket_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_tf_version_ssm_path"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_vpc_id"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_codebuild_project.aft_create_pipeline (expand)" -> "[root] var.global_codebuild_timeout"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] aws_cloudwatch_log_group.aft_global_customizations_terraform (expand)"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] aws_iam_role.aft_codebuild_customizations_role (expand)"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] data.local_file.aft_global_customizations_terraform (expand)"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] var.aft_vpc_id"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_codebuild_project.aft_global_customizations_terraform (expand)" -> "[root] var.global_codebuild_timeout"
+		"[root] aws_iam_role.aft_codebuild_customizations_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_codepipeline_customizations_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_customizations_execute_pipeline_lambda (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_customizations_get_pipeline_executions_lambda (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_customizations_identify_targets_lambda (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_invoke_customizations_sfn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" -> "[root] aws_iam_role.aft_codebuild_customizations_role (expand)"
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)" -> "[root] var.request_metadata_table_name"
+		"[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)" -> "[root] aws_iam_role.aft_codepipeline_customizations_role (expand)"
+		"[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] aws_iam_role.aft_customizations_execute_pipeline_lambda (expand)"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] aws_iam_role.aft_customizations_get_pipeline_executions_lambda (expand)"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] aws_iam_role.aft_customizations_identify_targets_lambda (expand)"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] var.account_request_table_name"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] var.invoke_account_provisioning_sfn_arn"
+		"[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)" -> "[root] var.request_metadata_table_name"
+		"[root] aws_iam_role_policy.aft_invoke_customizations_sfn (expand)" -> "[root] aws_iam_role.aft_invoke_customizations_sfn (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_customizations_sfn (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_customizations_sfn (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_customizations_sfn (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] aws_iam_role.aft_codebuild_customizations_role (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] var.aft_config_backend_bucket_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] var.aft_config_backend_kms_key_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] var.aft_config_backend_table_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)" -> "[root] var.terraform_distribution"
+		"[root] aws_iam_role_policy_attachment.aft_execute_pipeline_lambda (expand)" -> "[root] aws_iam_role.aft_customizations_execute_pipeline_lambda (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_execute_pipeline_lambda (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_get_pipeline_executions_lambda (expand)" -> "[root] aws_iam_role.aft_customizations_get_pipeline_executions_lambda (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_get_pipeline_executions_lambda (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_identify_targets_lambda (expand)" -> "[root] aws_iam_role.aft_customizations_identify_targets_lambda (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_identify_targets_lambda (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" -> "[root] aws_iam_role.aft_customizations_execute_pipeline_lambda (expand)"
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" -> "[root] var.customizations_archive_hash"
+		"[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)" -> "[root] var.customizations_archive_path"
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" -> "[root] aws_iam_role.aft_customizations_get_pipeline_executions_lambda (expand)"
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" -> "[root] var.customizations_archive_hash"
+		"[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)" -> "[root] var.customizations_archive_path"
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" -> "[root] aws_iam_role.aft_customizations_identify_targets_lambda (expand)"
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" -> "[root] var.customizations_archive_hash"
+		"[root] aws_lambda_function.aft_customizations_identify_targets (expand)" -> "[root] var.customizations_archive_path"
+		"[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_s3_bucket_acl.aft-codepipeline-customizations-bucket-acl (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_s3_bucket_server_side_encryption_configuration.aft-codepipeline-customizations-bucket-encryption (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_s3_bucket_server_side_encryption_configuration.aft-codepipeline-customizations-bucket-encryption (expand)" -> "[root] var.aft_kms_key_id"
+		"[root] aws_s3_bucket_versioning.aft-codepipeline-customizations-bucket-versioning (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] aws_sfn_state_machine.aft_invoke_customizations_sfn (expand)" -> "[root] aws_iam_role.aft_invoke_customizations_sfn (expand)"
+		"[root] aws_sfn_state_machine.aft_invoke_customizations_sfn (expand)" -> "[root] local.replacements_map (expand)"
+		"[root] aws_sfn_state_machine.aft_invoke_customizations_sfn (expand)" -> "[root] local.state_machine_source (expand)"
+		"[root] data.aws_caller_identity.aft_management (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_caller_identity.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_iam_policy.AWSLambdaBasicExecutionRole (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_partition.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_region.aft_management (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_region.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.local_file.aft_account_customizations_terraform (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"]"
+		"[root] data.local_file.aft_create_pipeline (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"]"
+		"[root] data.local_file.aft_global_customizations_terraform (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"]"
+		"[root] local.lambda_managed_policies (expand)" -> "[root] data.aws_iam_policy.AWSLambdaBasicExecutionRole (expand)"
+		"[root] local.lambda_managed_policies (expand)" -> "[root] data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.aft_customizations_identify_targets (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] local.replacements_map (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] local.replacements_map (expand)" -> "[root] var.invoke_account_provisioning_sfn_arn"
+		"[root] local.replacements_map (expand)" -> "[root] var.maximum_concurrent_customizations"
+		"[root] output.aft_codepipeline_customizations_bucket_arn (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] output.aft_codepipeline_customizations_bucket_name (expand)" -> "[root] aws_s3_bucket.aft_codepipeline_customizations_bucket (expand)"
+		"[root] output.aft_customizations_execute_pipeline_function_arn (expand)" -> "[root] aws_lambda_function.aft_customizations_execute_pipeline (expand)"
+		"[root] output.aft_customizations_get_pipeline_executions_function_arn (expand)" -> "[root] aws_lambda_function.aft_customizations_get_pipeline_executions (expand)"
+		"[root] output.aft_customizations_identify_targets_function_arn (expand)" -> "[root] aws_lambda_function.aft_customizations_identify_targets (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.aft_account_customizations_api_helpers (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.aft_customizations_identify_targets (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.aft_customizations_invoke_account_provisioning (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.aft_execute_pipeline (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.aft_get_pipeline_executions (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.aft_global_customizations_api_helpers (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codebuild_project.aft_account_customizations_terraform (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codebuild_project.aft_create_pipeline (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codebuild_project.aft_global_customizations_terraform (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_codebuild_customizations_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_codepipeline_customizations_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_execute_pipeline_lambda (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_get_pipeline_executions_lambda (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_identify_targets_lambda (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_invoke_customizations_sfn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.terraform_oss_backend_codebuild_customizations_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_execute_pipeline_lambda (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_get_pipeline_executions_lambda (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_identify_targets_lambda (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_s3_bucket_acl.aft-codepipeline-customizations-bucket-acl (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_s3_bucket_server_side_encryption_configuration.aft-codepipeline-customizations-bucket-encryption (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_s3_bucket_versioning.aft-codepipeline-customizations-bucket-versioning (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_sfn_state_machine.aft_invoke_customizations_sfn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)" -> "[root] data.local_file.aft_account_customizations_terraform (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)" -> "[root] data.local_file.aft_create_pipeline (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)" -> "[root] data.local_file.aft_global_customizations_terraform (expand)"
+		"[root] root" -> "[root] output.aft_codepipeline_customizations_bucket_arn (expand)"
+		"[root] root" -> "[root] output.aft_codepipeline_customizations_bucket_name (expand)"
+		"[root] root" -> "[root] output.aft_customizations_execute_pipeline_function_arn (expand)"
+		"[root] root" -> "[root] output.aft_customizations_get_pipeline_executions_function_arn (expand)"
+		"[root] root" -> "[root] output.aft_customizations_identify_targets_function_arn (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)"
+	}
+}
+

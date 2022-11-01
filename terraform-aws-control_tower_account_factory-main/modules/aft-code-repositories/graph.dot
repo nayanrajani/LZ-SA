@@ -1,0 +1,230 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_cloudwatch_event_rule.account_provisioning_customizations (expand)" [label = "aws_cloudwatch_event_rule.account_provisioning_customizations", shape = "box"]
+		"[root] aws_cloudwatch_event_rule.account_request (expand)" [label = "aws_cloudwatch_event_rule.account_request", shape = "box"]
+		"[root] aws_cloudwatch_event_target.account_provisioning_customizations (expand)" [label = "aws_cloudwatch_event_target.account_provisioning_customizations", shape = "box"]
+		"[root] aws_cloudwatch_event_target.account_request (expand)" [label = "aws_cloudwatch_event_target.account_request", shape = "box"]
+		"[root] aws_cloudwatch_log_group.account_provisioning_customizations (expand)" [label = "aws_cloudwatch_log_group.account_provisioning_customizations", shape = "box"]
+		"[root] aws_cloudwatch_log_group.account_request (expand)" [label = "aws_cloudwatch_log_group.account_request", shape = "box"]
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" [label = "aws_codebuild_project.account_provisioning_customizations_pipeline", shape = "box"]
+		"[root] aws_codebuild_project.account_request (expand)" [label = "aws_codebuild_project.account_request", shape = "box"]
+		"[root] aws_codecommit_repository.account_customizations (expand)" [label = "aws_codecommit_repository.account_customizations", shape = "box"]
+		"[root] aws_codecommit_repository.account_provisioning_customizations (expand)" [label = "aws_codecommit_repository.account_provisioning_customizations", shape = "box"]
+		"[root] aws_codecommit_repository.account_request (expand)" [label = "aws_codecommit_repository.account_request", shape = "box"]
+		"[root] aws_codecommit_repository.global_customizations (expand)" [label = "aws_codecommit_repository.global_customizations", shape = "box"]
+		"[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)" [label = "aws_codepipeline.codecommit_account_provisioning_customizations", shape = "box"]
+		"[root] aws_codepipeline.codecommit_account_request (expand)" [label = "aws_codepipeline.codecommit_account_request", shape = "box"]
+		"[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)" [label = "aws_codepipeline.codestar_account_provisioning_customizations", shape = "box"]
+		"[root] aws_codepipeline.codestar_account_request (expand)" [label = "aws_codepipeline.codestar_account_request", shape = "box"]
+		"[root] aws_codestarconnections_connection.bitbucket (expand)" [label = "aws_codestarconnections_connection.bitbucket", shape = "box"]
+		"[root] aws_codestarconnections_connection.github (expand)" [label = "aws_codestarconnections_connection.github", shape = "box"]
+		"[root] aws_codestarconnections_connection.githubenterprise (expand)" [label = "aws_codestarconnections_connection.githubenterprise", shape = "box"]
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" [label = "aws_codestarconnections_host.githubenterprise", shape = "box"]
+		"[root] aws_iam_role.account_provisioning_customizations_codebuild_role (expand)" [label = "aws_iam_role.account_provisioning_customizations_codebuild_role", shape = "box"]
+		"[root] aws_iam_role.account_provisioning_customizations_codepipeline_role (expand)" [label = "aws_iam_role.account_provisioning_customizations_codepipeline_role", shape = "box"]
+		"[root] aws_iam_role.account_request_codebuild_role (expand)" [label = "aws_iam_role.account_request_codebuild_role", shape = "box"]
+		"[root] aws_iam_role.account_request_codepipeline_role (expand)" [label = "aws_iam_role.account_request_codepipeline_role", shape = "box"]
+		"[root] aws_iam_role.cloudwatch_events_codepipeline_role (expand)" [label = "aws_iam_role.cloudwatch_events_codepipeline_role", shape = "box"]
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" [label = "aws_iam_role_policy.account_provisioning_customizations_codebuild_policy", shape = "box"]
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" [label = "aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy", shape = "box"]
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" [label = "aws_iam_role_policy.account_request_codebuild_policy", shape = "box"]
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" [label = "aws_iam_role_policy.account_request_codepipeline_policy", shape = "box"]
+		"[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)" [label = "aws_iam_role_policy.cloudwatch_events_codepipeline_role", shape = "box"]
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" [label = "aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy", shape = "box"]
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" [label = "aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy", shape = "box"]
+		"[root] data.aws_caller_identity.current (expand)" [label = "data.aws_caller_identity.current", shape = "box"]
+		"[root] data.aws_partition.current (expand)" [label = "data.aws_partition.current", shape = "box"]
+		"[root] data.aws_region.current (expand)" [label = "data.aws_region.current", shape = "box"]
+		"[root] data.local_file.account_provisioning_customizations_buildspec (expand)" [label = "data.local_file.account_provisioning_customizations_buildspec", shape = "box"]
+		"[root] data.local_file.account_request_buildspec (expand)" [label = "data.local_file.account_request_buildspec", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"]" [label = "provider[\"registry.terraform.io/hashicorp/local\"]", shape = "diamond"]
+		"[root] var.account_customizations_repo_branch" [label = "var.account_customizations_repo_branch", shape = "note"]
+		"[root] var.account_customizations_repo_name" [label = "var.account_customizations_repo_name", shape = "note"]
+		"[root] var.account_provisioning_customizations_repo_branch" [label = "var.account_provisioning_customizations_repo_branch", shape = "note"]
+		"[root] var.account_provisioning_customizations_repo_name" [label = "var.account_provisioning_customizations_repo_name", shape = "note"]
+		"[root] var.account_request_repo_branch" [label = "var.account_request_repo_branch", shape = "note"]
+		"[root] var.account_request_repo_name" [label = "var.account_request_repo_name", shape = "note"]
+		"[root] var.account_request_table_name" [label = "var.account_request_table_name", shape = "note"]
+		"[root] var.aft_config_backend_bucket_id" [label = "var.aft_config_backend_bucket_id", shape = "note"]
+		"[root] var.aft_config_backend_kms_key_id" [label = "var.aft_config_backend_kms_key_id", shape = "note"]
+		"[root] var.aft_config_backend_table_id" [label = "var.aft_config_backend_table_id", shape = "note"]
+		"[root] var.aft_key_arn" [label = "var.aft_key_arn", shape = "note"]
+		"[root] var.codepipeline_s3_bucket_arn" [label = "var.codepipeline_s3_bucket_arn", shape = "note"]
+		"[root] var.codepipeline_s3_bucket_name" [label = "var.codepipeline_s3_bucket_name", shape = "note"]
+		"[root] var.github_enterprise_url" [label = "var.github_enterprise_url", shape = "note"]
+		"[root] var.global_codebuild_timeout" [label = "var.global_codebuild_timeout", shape = "note"]
+		"[root] var.global_customizations_repo_branch" [label = "var.global_customizations_repo_branch", shape = "note"]
+		"[root] var.global_customizations_repo_name" [label = "var.global_customizations_repo_name", shape = "note"]
+		"[root] var.log_group_retention" [label = "var.log_group_retention", shape = "note"]
+		"[root] var.security_group_ids" [label = "var.security_group_ids", shape = "note"]
+		"[root] var.subnet_ids" [label = "var.subnet_ids", shape = "note"]
+		"[root] var.terraform_distribution" [label = "var.terraform_distribution", shape = "note"]
+		"[root] var.vcs_provider" [label = "var.vcs_provider", shape = "note"]
+		"[root] var.vpc_id" [label = "var.vpc_id", shape = "note"]
+		"[root] aws_cloudwatch_event_rule.account_provisioning_customizations (expand)" -> "[root] aws_codecommit_repository.account_provisioning_customizations (expand)"
+		"[root] aws_cloudwatch_event_rule.account_request (expand)" -> "[root] aws_codecommit_repository.account_request (expand)"
+		"[root] aws_cloudwatch_event_target.account_provisioning_customizations (expand)" -> "[root] aws_cloudwatch_event_rule.account_provisioning_customizations (expand)"
+		"[root] aws_cloudwatch_event_target.account_provisioning_customizations (expand)" -> "[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)"
+		"[root] aws_cloudwatch_event_target.account_provisioning_customizations (expand)" -> "[root] aws_iam_role.cloudwatch_events_codepipeline_role (expand)"
+		"[root] aws_cloudwatch_event_target.account_request (expand)" -> "[root] aws_cloudwatch_event_rule.account_request (expand)"
+		"[root] aws_cloudwatch_event_target.account_request (expand)" -> "[root] aws_codepipeline.codecommit_account_request (expand)"
+		"[root] aws_cloudwatch_event_target.account_request (expand)" -> "[root] aws_iam_role.cloudwatch_events_codepipeline_role (expand)"
+		"[root] aws_cloudwatch_log_group.account_provisioning_customizations (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.account_provisioning_customizations (expand)" -> "[root] var.log_group_retention"
+		"[root] aws_cloudwatch_log_group.account_request (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cloudwatch_log_group.account_request (expand)" -> "[root] var.log_group_retention"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] aws_cloudwatch_log_group.account_provisioning_customizations (expand)"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] aws_cloudwatch_log_group.account_request (expand)"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] aws_iam_role.account_provisioning_customizations_codebuild_role (expand)"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] data.local_file.account_provisioning_customizations_buildspec (expand)"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] var.aft_key_arn"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] var.codepipeline_s3_bucket_name"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] var.global_codebuild_timeout"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] var.security_group_ids"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] var.subnet_ids"
+		"[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)" -> "[root] var.vpc_id"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] aws_cloudwatch_log_group.account_request (expand)"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] aws_iam_role.account_request_codebuild_role (expand)"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] data.local_file.account_request_buildspec (expand)"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] var.aft_key_arn"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] var.codepipeline_s3_bucket_name"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] var.global_codebuild_timeout"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] var.security_group_ids"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] var.subnet_ids"
+		"[root] aws_codebuild_project.account_request (expand)" -> "[root] var.vpc_id"
+		"[root] aws_codecommit_repository.account_customizations (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codecommit_repository.account_customizations (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codecommit_repository.account_customizations (expand)" -> "[root] var.account_customizations_repo_branch"
+		"[root] aws_codecommit_repository.account_customizations (expand)" -> "[root] var.account_customizations_repo_name"
+		"[root] aws_codecommit_repository.account_provisioning_customizations (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codecommit_repository.account_provisioning_customizations (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codecommit_repository.account_provisioning_customizations (expand)" -> "[root] var.account_provisioning_customizations_repo_branch"
+		"[root] aws_codecommit_repository.account_provisioning_customizations (expand)" -> "[root] var.account_provisioning_customizations_repo_name"
+		"[root] aws_codecommit_repository.account_request (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codecommit_repository.account_request (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codecommit_repository.account_request (expand)" -> "[root] var.account_request_repo_branch"
+		"[root] aws_codecommit_repository.account_request (expand)" -> "[root] var.account_request_repo_name"
+		"[root] aws_codecommit_repository.global_customizations (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codecommit_repository.global_customizations (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codecommit_repository.global_customizations (expand)" -> "[root] var.global_customizations_repo_branch"
+		"[root] aws_codecommit_repository.global_customizations (expand)" -> "[root] var.global_customizations_repo_name"
+		"[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)" -> "[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)"
+		"[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)" -> "[root] aws_iam_role.account_provisioning_customizations_codepipeline_role (expand)"
+		"[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)" -> "[root] var.account_provisioning_customizations_repo_branch"
+		"[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)" -> "[root] var.account_provisioning_customizations_repo_name"
+		"[root] aws_codepipeline.codecommit_account_request (expand)" -> "[root] aws_codebuild_project.account_request (expand)"
+		"[root] aws_codepipeline.codecommit_account_request (expand)" -> "[root] aws_iam_role.account_request_codepipeline_role (expand)"
+		"[root] aws_codepipeline.codecommit_account_request (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codepipeline.codecommit_account_request (expand)" -> "[root] var.account_request_repo_branch"
+		"[root] aws_codepipeline.codecommit_account_request (expand)" -> "[root] var.account_request_repo_name"
+		"[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)" -> "[root] aws_codebuild_project.account_provisioning_customizations_pipeline (expand)"
+		"[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)" -> "[root] aws_iam_role.account_provisioning_customizations_codepipeline_role (expand)"
+		"[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)" -> "[root] local.connection_arn (expand)"
+		"[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)" -> "[root] var.account_provisioning_customizations_repo_branch"
+		"[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)" -> "[root] var.account_provisioning_customizations_repo_name"
+		"[root] aws_codepipeline.codestar_account_request (expand)" -> "[root] aws_codebuild_project.account_request (expand)"
+		"[root] aws_codepipeline.codestar_account_request (expand)" -> "[root] aws_iam_role.account_request_codepipeline_role (expand)"
+		"[root] aws_codepipeline.codestar_account_request (expand)" -> "[root] local.connection_arn (expand)"
+		"[root] aws_codepipeline.codestar_account_request (expand)" -> "[root] var.account_request_repo_branch"
+		"[root] aws_codepipeline.codestar_account_request (expand)" -> "[root] var.account_request_repo_name"
+		"[root] aws_codestarconnections_connection.bitbucket (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codestarconnections_connection.bitbucket (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codestarconnections_connection.github (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codestarconnections_connection.github (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codestarconnections_connection.githubenterprise (expand)" -> "[root] aws_codestarconnections_host.githubenterprise (expand)"
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" -> "[root] var.github_enterprise_url"
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" -> "[root] var.security_group_ids"
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" -> "[root] var.subnet_ids"
+		"[root] aws_codestarconnections_host.githubenterprise (expand)" -> "[root] var.vpc_id"
+		"[root] aws_iam_role.account_provisioning_customizations_codebuild_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.account_provisioning_customizations_codepipeline_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.account_request_codebuild_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.account_request_codepipeline_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.cloudwatch_events_codepipeline_role (expand)" -> "[root] local.vcs (expand)"
+		"[root] aws_iam_role.cloudwatch_events_codepipeline_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] aws_iam_role.account_provisioning_customizations_codebuild_role (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.account_request_table_name"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.aft_key_arn"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.codepipeline_s3_bucket_arn"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" -> "[root] aws_iam_role.account_provisioning_customizations_codepipeline_role (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" -> "[root] var.aft_key_arn"
+		"[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)" -> "[root] var.codepipeline_s3_bucket_arn"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] aws_iam_role.account_request_codebuild_role (expand)"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] var.account_request_table_name"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] var.aft_key_arn"
+		"[root] aws_iam_role_policy.account_request_codebuild_policy (expand)" -> "[root] var.codepipeline_s3_bucket_arn"
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" -> "[root] aws_iam_role.account_request_codepipeline_role (expand)"
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" -> "[root] var.aft_key_arn"
+		"[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)" -> "[root] var.codepipeline_s3_bucket_arn"
+		"[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)" -> "[root] aws_codepipeline.codecommit_account_provisioning_customizations (expand)"
+		"[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)" -> "[root] aws_codepipeline.codecommit_account_request (expand)"
+		"[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)" -> "[root] aws_iam_role.cloudwatch_events_codepipeline_role (expand)"
+		"[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] aws_iam_role.account_provisioning_customizations_codebuild_role (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.aft_config_backend_bucket_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.aft_config_backend_kms_key_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.aft_config_backend_table_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)" -> "[root] var.terraform_distribution"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] aws_iam_role.account_request_codebuild_role (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] data.aws_caller_identity.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] var.aft_config_backend_bucket_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] var.aft_config_backend_kms_key_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] var.aft_config_backend_table_id"
+		"[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)" -> "[root] var.terraform_distribution"
+		"[root] data.aws_caller_identity.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_partition.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_region.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.local_file.account_provisioning_customizations_buildspec (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"]"
+		"[root] data.local_file.account_request_buildspec (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"]"
+		"[root] local.connection_arn (expand)" -> "[root] aws_codestarconnections_connection.bitbucket (expand)"
+		"[root] local.connection_arn (expand)" -> "[root] aws_codestarconnections_connection.github (expand)"
+		"[root] local.connection_arn (expand)" -> "[root] aws_codestarconnections_connection.githubenterprise (expand)"
+		"[root] local.vcs (expand)" -> "[root] var.vcs_provider"
+		"[root] output.codestar_connection_arn (expand)" -> "[root] local.connection_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_event_target.account_provisioning_customizations (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_event_target.account_request (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codecommit_repository.account_customizations (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codecommit_repository.global_customizations (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codepipeline.codestar_account_provisioning_customizations (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_codepipeline.codestar_account_request (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.account_provisioning_customizations_codebuild_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.account_provisioning_customizations_codepipeline_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.account_request_codebuild_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.account_request_codepipeline_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.cloudwatch_events_codepipeline_role (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.terraform_oss_backend_account_provisioning_customizations_codebuild_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.terraform_oss_backend_account_request_codebuild_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)" -> "[root] data.local_file.account_provisioning_customizations_buildspec (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)" -> "[root] data.local_file.account_request_buildspec (expand)"
+		"[root] root" -> "[root] output.codestar_connection_arn (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)"
+	}
+}
+

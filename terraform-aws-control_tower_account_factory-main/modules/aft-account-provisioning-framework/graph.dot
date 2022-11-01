@@ -1,0 +1,215 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_cloudwatch_log_group.account_metadata_ssm (expand)" [label = "aws_cloudwatch_log_group.account_metadata_ssm", shape = "box"]
+		"[root] aws_cloudwatch_log_group.create_role (expand)" [label = "aws_cloudwatch_log_group.create_role", shape = "box"]
+		"[root] aws_cloudwatch_log_group.get_account_info (expand)" [label = "aws_cloudwatch_log_group.get_account_info", shape = "box"]
+		"[root] aws_cloudwatch_log_group.persist_metadata (expand)" [label = "aws_cloudwatch_log_group.persist_metadata", shape = "box"]
+		"[root] aws_cloudwatch_log_group.tag_account (expand)" [label = "aws_cloudwatch_log_group.tag_account", shape = "box"]
+		"[root] aws_cloudwatch_log_group.validate_request (expand)" [label = "aws_cloudwatch_log_group.validate_request", shape = "box"]
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_create_role (expand)" [label = "aws_iam_role.aft_lambda_aft_account_provisioning_framework_create_role", shape = "box"]
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_get_account_info (expand)" [label = "aws_iam_role.aft_lambda_aft_account_provisioning_framework_get_account_info", shape = "box"]
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata (expand)" [label = "aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata", shape = "box"]
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_tag_account (expand)" [label = "aws_iam_role.aft_lambda_aft_account_provisioning_framework_tag_account", shape = "box"]
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_validate_request (expand)" [label = "aws_iam_role.aft_lambda_aft_account_provisioning_framework_validate_request", shape = "box"]
+		"[root] aws_iam_role.aft_states (expand)" [label = "aws_iam_role.aft_states", shape = "box"]
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" [label = "aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role", shape = "box"]
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" [label = "aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info", shape = "box"]
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" [label = "aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata", shape = "box"]
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" [label = "aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account", shape = "box"]
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" [label = "aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request", shape = "box"]
+		"[root] aws_iam_role_policy.aft_states (expand)" [label = "aws_iam_role_policy.aft_states", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_create_role (expand)" [label = "aws_iam_role_policy_attachment.aft_account_provisioning_framework_create_role", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_get_account_info (expand)" [label = "aws_iam_role_policy_attachment.aft_account_provisioning_framework_get_account_info", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_persist_metadata (expand)" [label = "aws_iam_role_policy_attachment.aft_account_provisioning_framework_persist_metadata", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_tag_account (expand)" [label = "aws_iam_role_policy_attachment.aft_account_provisioning_framework_tag_account", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_validate_request (expand)" [label = "aws_iam_role_policy_attachment.aft_account_provisioning_framework_validate_request", shape = "box"]
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" [label = "aws_lambda_function.account_metadata_ssm", shape = "box"]
+		"[root] aws_lambda_function.create_role (expand)" [label = "aws_lambda_function.create_role", shape = "box"]
+		"[root] aws_lambda_function.get_account_info (expand)" [label = "aws_lambda_function.get_account_info", shape = "box"]
+		"[root] aws_lambda_function.persist_metadata (expand)" [label = "aws_lambda_function.persist_metadata", shape = "box"]
+		"[root] aws_lambda_function.tag_account (expand)" [label = "aws_lambda_function.tag_account", shape = "box"]
+		"[root] aws_lambda_function.validate_request (expand)" [label = "aws_lambda_function.validate_request", shape = "box"]
+		"[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)" [label = "aws_sfn_state_machine.aft_account_provisioning_framework_sfn", shape = "box"]
+		"[root] data.aws_caller_identity.aft_management (expand)" [label = "data.aws_caller_identity.aft_management", shape = "box"]
+		"[root] data.aws_iam_policy.AWSLambdaBasicExecutionRole (expand)" [label = "data.aws_iam_policy.AWSLambdaBasicExecutionRole", shape = "box"]
+		"[root] data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole (expand)" [label = "data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole", shape = "box"]
+		"[root] data.aws_partition.current (expand)" [label = "data.aws_partition.current", shape = "box"]
+		"[root] data.aws_region.aft_management (expand)" [label = "data.aws_region.aft_management", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] var.aft_account_provisioning_customizations_sfn_name" [label = "var.aft_account_provisioning_customizations_sfn_name", shape = "note"]
+		"[root] var.aft_account_provisioning_framework_sfn_name" [label = "var.aft_account_provisioning_framework_sfn_name", shape = "note"]
+		"[root] var.aft_common_layer_arn" [label = "var.aft_common_layer_arn", shape = "note"]
+		"[root] var.aft_failure_sns_topic_arn" [label = "var.aft_failure_sns_topic_arn", shape = "note"]
+		"[root] var.aft_features_sfn_name" [label = "var.aft_features_sfn_name", shape = "note"]
+		"[root] var.aft_kms_key_arn" [label = "var.aft_kms_key_arn", shape = "note"]
+		"[root] var.aft_sns_topic_arn" [label = "var.aft_sns_topic_arn", shape = "note"]
+		"[root] var.aft_vpc_default_sg" [label = "var.aft_vpc_default_sg", shape = "note"]
+		"[root] var.aft_vpc_private_subnets" [label = "var.aft_vpc_private_subnets", shape = "note"]
+		"[root] var.cloudwatch_log_group_retention" [label = "var.cloudwatch_log_group_retention", shape = "note"]
+		"[root] var.provisioning_framework_archive_hash" [label = "var.provisioning_framework_archive_hash", shape = "note"]
+		"[root] var.provisioning_framework_archive_path" [label = "var.provisioning_framework_archive_path", shape = "note"]
+		"[root] var.trigger_customizations_sfn_name" [label = "var.trigger_customizations_sfn_name", shape = "note"]
+		"[root] aws_cloudwatch_log_group.account_metadata_ssm (expand)" -> "[root] aws_lambda_function.account_metadata_ssm (expand)"
+		"[root] aws_cloudwatch_log_group.account_metadata_ssm (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.create_role (expand)" -> "[root] aws_lambda_function.create_role (expand)"
+		"[root] aws_cloudwatch_log_group.create_role (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.get_account_info (expand)" -> "[root] aws_lambda_function.get_account_info (expand)"
+		"[root] aws_cloudwatch_log_group.get_account_info (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.persist_metadata (expand)" -> "[root] aws_lambda_function.persist_metadata (expand)"
+		"[root] aws_cloudwatch_log_group.persist_metadata (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.tag_account (expand)" -> "[root] aws_lambda_function.tag_account (expand)"
+		"[root] aws_cloudwatch_log_group.tag_account (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_cloudwatch_log_group.validate_request (expand)" -> "[root] aws_lambda_function.validate_request (expand)"
+		"[root] aws_cloudwatch_log_group.validate_request (expand)" -> "[root] var.cloudwatch_log_group_retention"
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_create_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_tag_account (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_validate_request (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.aft_states (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_create_role (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_get_account_info (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_tag_account (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_validate_request (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_iam_role_policy.aft_states (expand)" -> "[root] aws_iam_role.aft_states (expand)"
+		"[root] aws_iam_role_policy.aft_states (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] aws_iam_role_policy.aft_states (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.aft_states (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_create_role (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_create_role (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_create_role (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_get_account_info (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_get_account_info (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_get_account_info (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_persist_metadata (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_tag_account (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_tag_account (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_tag_account (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_validate_request (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_validate_request (expand)"
+		"[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_validate_request (expand)" -> "[root] local.lambda_managed_policies (expand)"
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata (expand)"
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" -> "[root] var.provisioning_framework_archive_hash"
+		"[root] aws_lambda_function.account_metadata_ssm (expand)" -> "[root] var.provisioning_framework_archive_path"
+		"[root] aws_lambda_function.create_role (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_create_role (expand)"
+		"[root] aws_lambda_function.create_role (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.create_role (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.create_role (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.create_role (expand)" -> "[root] var.provisioning_framework_archive_hash"
+		"[root] aws_lambda_function.create_role (expand)" -> "[root] var.provisioning_framework_archive_path"
+		"[root] aws_lambda_function.get_account_info (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_get_account_info (expand)"
+		"[root] aws_lambda_function.get_account_info (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.get_account_info (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.get_account_info (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.get_account_info (expand)" -> "[root] var.provisioning_framework_archive_hash"
+		"[root] aws_lambda_function.get_account_info (expand)" -> "[root] var.provisioning_framework_archive_path"
+		"[root] aws_lambda_function.persist_metadata (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_persist_metadata (expand)"
+		"[root] aws_lambda_function.persist_metadata (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.persist_metadata (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.persist_metadata (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.persist_metadata (expand)" -> "[root] var.provisioning_framework_archive_hash"
+		"[root] aws_lambda_function.persist_metadata (expand)" -> "[root] var.provisioning_framework_archive_path"
+		"[root] aws_lambda_function.tag_account (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_tag_account (expand)"
+		"[root] aws_lambda_function.tag_account (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.tag_account (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.tag_account (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.tag_account (expand)" -> "[root] var.provisioning_framework_archive_hash"
+		"[root] aws_lambda_function.tag_account (expand)" -> "[root] var.provisioning_framework_archive_path"
+		"[root] aws_lambda_function.validate_request (expand)" -> "[root] aws_iam_role.aft_lambda_aft_account_provisioning_framework_validate_request (expand)"
+		"[root] aws_lambda_function.validate_request (expand)" -> "[root] var.aft_common_layer_arn"
+		"[root] aws_lambda_function.validate_request (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.validate_request (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.validate_request (expand)" -> "[root] var.provisioning_framework_archive_hash"
+		"[root] aws_lambda_function.validate_request (expand)" -> "[root] var.provisioning_framework_archive_path"
+		"[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)" -> "[root] aws_iam_role.aft_states (expand)"
+		"[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)" -> "[root] local.replacements_map (expand)"
+		"[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)" -> "[root] local.state_machine_source (expand)"
+		"[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)" -> "[root] var.aft_account_provisioning_framework_sfn_name"
+		"[root] data.aws_caller_identity.aft_management (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_iam_policy.AWSLambdaBasicExecutionRole (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_partition.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_region.aft_management (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] local.lambda_managed_policies (expand)" -> "[root] data.aws_iam_policy.AWSLambdaBasicExecutionRole (expand)"
+		"[root] local.lambda_managed_policies (expand)" -> "[root] data.aws_iam_policy.AWSLambdaVPCAccessExecutionRole (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.account_metadata_ssm (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.create_role (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.get_account_info (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.persist_metadata (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.tag_account (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] aws_lambda_function.validate_request (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] data.aws_caller_identity.aft_management (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] data.aws_region.aft_management (expand)"
+		"[root] local.replacements_map (expand)" -> "[root] var.aft_account_provisioning_customizations_sfn_name"
+		"[root] local.replacements_map (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] local.replacements_map (expand)" -> "[root] var.aft_features_sfn_name"
+		"[root] local.replacements_map (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] local.replacements_map (expand)" -> "[root] var.trigger_customizations_sfn_name"
+		"[root] output.create_role_function_arn (expand)" -> "[root] aws_lambda_function.create_role (expand)"
+		"[root] output.get_account_info_function_arn (expand)" -> "[root] aws_lambda_function.get_account_info (expand)"
+		"[root] output.persist_metadata_function_arn (expand)" -> "[root] aws_lambda_function.persist_metadata (expand)"
+		"[root] output.state_machine_arn (expand)" -> "[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)"
+		"[root] output.tag_account_function_arn (expand)" -> "[root] aws_lambda_function.tag_account (expand)"
+		"[root] output.validate_request_function_arn (expand)" -> "[root] aws_lambda_function.validate_request (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.account_metadata_ssm (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.create_role (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.get_account_info (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.persist_metadata (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.tag_account (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_cloudwatch_log_group.validate_request (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_create_role (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_get_account_info (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_persist_metadata (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_tag_account (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_invoke_aft_account_provisioning_framework_validate_request (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.aft_states (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_create_role (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_get_account_info (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_persist_metadata (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_tag_account (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.aft_account_provisioning_framework_validate_request (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_sfn_state_machine.aft_account_provisioning_framework_sfn (expand)"
+		"[root] root" -> "[root] output.create_role_function_arn (expand)"
+		"[root] root" -> "[root] output.get_account_info_function_arn (expand)"
+		"[root] root" -> "[root] output.persist_metadata_function_arn (expand)"
+		"[root] root" -> "[root] output.state_machine_arn (expand)"
+		"[root] root" -> "[root] output.tag_account_function_arn (expand)"
+		"[root] root" -> "[root] output.validate_request_function_arn (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+	}
+}
+

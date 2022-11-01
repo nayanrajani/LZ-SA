@@ -1,0 +1,330 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_ssm_parameter.account_customizations_repo_branch (expand)" [label = "aws_ssm_parameter.account_customizations_repo_branch", shape = "box"]
+		"[root] aws_ssm_parameter.account_customizations_repo_name (expand)" [label = "aws_ssm_parameter.account_customizations_repo_name", shape = "box"]
+		"[root] aws_ssm_parameter.account_provisioning_customizations_repo_branch (expand)" [label = "aws_ssm_parameter.account_provisioning_customizations_repo_branch", shape = "box"]
+		"[root] aws_ssm_parameter.account_provisioning_customizations_repo_name (expand)" [label = "aws_ssm_parameter.account_provisioning_customizations_repo_name", shape = "box"]
+		"[root] aws_ssm_parameter.account_request_repo_branch (expand)" [label = "aws_ssm_parameter.account_request_repo_branch", shape = "box"]
+		"[root] aws_ssm_parameter.account_request_repo_name (expand)" [label = "aws_ssm_parameter.account_request_repo_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_account_factory_product_name (expand)" [label = "aws_ssm_parameter.aft_account_factory_product_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_account_provisioning_framework_sfn_name (expand)" [label = "aws_ssm_parameter.aft_account_provisioning_framework_sfn_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_administrator_role_name (expand)" [label = "aws_ssm_parameter.aft_administrator_role_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_config_backend_bucket_id (expand)" [label = "aws_ssm_parameter.aft_config_backend_bucket_id", shape = "box"]
+		"[root] aws_ssm_parameter.aft_config_backend_kms_key_id (expand)" [label = "aws_ssm_parameter.aft_config_backend_kms_key_id", shape = "box"]
+		"[root] aws_ssm_parameter.aft_config_backend_primary_region (expand)" [label = "aws_ssm_parameter.aft_config_backend_primary_region", shape = "box"]
+		"[root] aws_ssm_parameter.aft_config_backend_secondary_region (expand)" [label = "aws_ssm_parameter.aft_config_backend_secondary_region", shape = "box"]
+		"[root] aws_ssm_parameter.aft_config_backend_table_id (expand)" [label = "aws_ssm_parameter.aft_config_backend_table_id", shape = "box"]
+		"[root] aws_ssm_parameter.aft_controltower_events_table_name (expand)" [label = "aws_ssm_parameter.aft_controltower_events_table_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_customizations_execute_pipeline_function_arn (expand)" [label = "aws_ssm_parameter.aft_customizations_execute_pipeline_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_customizations_get_pipeline_executions_function_arn (expand)" [label = "aws_ssm_parameter.aft_customizations_get_pipeline_executions_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_customizations_identify_targets_function_arn (expand)" [label = "aws_ssm_parameter.aft_customizations_identify_targets_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_execution_role_name (expand)" [label = "aws_ssm_parameter.aft_execution_role_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_failure_sns_topic_arn (expand)" [label = "aws_ssm_parameter.aft_failure_sns_topic_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_feature_cloudtrail_data_events (expand)" [label = "aws_ssm_parameter.aft_feature_cloudtrail_data_events", shape = "box"]
+		"[root] aws_ssm_parameter.aft_feature_delete_default_vpcs_enabled (expand)" [label = "aws_ssm_parameter.aft_feature_delete_default_vpcs_enabled", shape = "box"]
+		"[root] aws_ssm_parameter.aft_feature_enterprise_support (expand)" [label = "aws_ssm_parameter.aft_feature_enterprise_support", shape = "box"]
+		"[root] aws_ssm_parameter.aft_framework_repo_git_ref (expand)" [label = "aws_ssm_parameter.aft_framework_repo_git_ref", shape = "box"]
+		"[root] aws_ssm_parameter.aft_framework_repo_url (expand)" [label = "aws_ssm_parameter.aft_framework_repo_url", shape = "box"]
+		"[root] aws_ssm_parameter.aft_invoke_aft_account_provisioning_framework_lambda_function_name (expand)" [label = "aws_ssm_parameter.aft_invoke_aft_account_provisioning_framework_lambda_function_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_log_key_arn (expand)" [label = "aws_ssm_parameter.aft_log_key_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_logging_bucket_arn (expand)" [label = "aws_ssm_parameter.aft_logging_bucket_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_management_account_id (expand)" [label = "aws_ssm_parameter.aft_management_account_id", shape = "box"]
+		"[root] aws_ssm_parameter.aft_maximum_concurrent_customizations (expand)" [label = "aws_ssm_parameter.aft_maximum_concurrent_customizations", shape = "box"]
+		"[root] aws_ssm_parameter.aft_metrics_reporting (expand)" [label = "aws_ssm_parameter.aft_metrics_reporting", shape = "box"]
+		"[root] aws_ssm_parameter.aft_metrics_reporting_uuid (expand)" [label = "aws_ssm_parameter.aft_metrics_reporting_uuid", shape = "box"]
+		"[root] aws_ssm_parameter.aft_request_action_trigger_function_arn (expand)" [label = "aws_ssm_parameter.aft_request_action_trigger_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_request_audit_table_name (expand)" [label = "aws_ssm_parameter.aft_request_audit_table_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_request_metadata_table_name (expand)" [label = "aws_ssm_parameter.aft_request_metadata_table_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_request_queue_name (expand)" [label = "aws_ssm_parameter.aft_request_queue_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_request_table_name (expand)" [label = "aws_ssm_parameter.aft_request_table_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_session_name (expand)" [label = "aws_ssm_parameter.aft_session_name", shape = "box"]
+		"[root] aws_ssm_parameter.aft_sns_topic_arn (expand)" [label = "aws_ssm_parameter.aft_sns_topic_arn", shape = "box"]
+		"[root] aws_ssm_parameter.aft_version (expand)" [label = "aws_ssm_parameter.aft_version", shape = "box"]
+		"[root] aws_ssm_parameter.codestar_connection_arn (expand)" [label = "aws_ssm_parameter.codestar_connection_arn", shape = "box"]
+		"[root] aws_ssm_parameter.control_tower_event_logger_function_arn (expand)" [label = "aws_ssm_parameter.control_tower_event_logger_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.create_role_function_arn (expand)" [label = "aws_ssm_parameter.create_role_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.ct_audit_account_id (expand)" [label = "aws_ssm_parameter.ct_audit_account_id", shape = "box"]
+		"[root] aws_ssm_parameter.ct_log_archive_account_id (expand)" [label = "aws_ssm_parameter.ct_log_archive_account_id", shape = "box"]
+		"[root] aws_ssm_parameter.ct_management_account_id (expand)" [label = "aws_ssm_parameter.ct_management_account_id", shape = "box"]
+		"[root] aws_ssm_parameter.ct_primary_region (expand)" [label = "aws_ssm_parameter.ct_primary_region", shape = "box"]
+		"[root] aws_ssm_parameter.get_account_info_function_arn (expand)" [label = "aws_ssm_parameter.get_account_info_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.github_enterprise_url (expand)" [label = "aws_ssm_parameter.github_enterprise_url", shape = "box"]
+		"[root] aws_ssm_parameter.global_customizations_repo_branch (expand)" [label = "aws_ssm_parameter.global_customizations_repo_branch", shape = "box"]
+		"[root] aws_ssm_parameter.global_customizations_repo_name (expand)" [label = "aws_ssm_parameter.global_customizations_repo_name", shape = "box"]
+		"[root] aws_ssm_parameter.invoke_aft_account_provisioning_framework_function_arn (expand)" [label = "aws_ssm_parameter.invoke_aft_account_provisioning_framework_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.persist_metadata_function_arn (expand)" [label = "aws_ssm_parameter.persist_metadata_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.request_audit_trigger_function_arn (expand)" [label = "aws_ssm_parameter.request_audit_trigger_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.request_processor_function_arn (expand)" [label = "aws_ssm_parameter.request_processor_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.tag_account_function_arn (expand)" [label = "aws_ssm_parameter.tag_account_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.terraform_api_endpoint (expand)" [label = "aws_ssm_parameter.terraform_api_endpoint", shape = "box"]
+		"[root] aws_ssm_parameter.terraform_org_name (expand)" [label = "aws_ssm_parameter.terraform_org_name", shape = "box"]
+		"[root] aws_ssm_parameter.terraform_token (expand)" [label = "aws_ssm_parameter.terraform_token", shape = "box"]
+		"[root] aws_ssm_parameter.tf_distribution (expand)" [label = "aws_ssm_parameter.tf_distribution", shape = "box"]
+		"[root] aws_ssm_parameter.tf_version (expand)" [label = "aws_ssm_parameter.tf_version", shape = "box"]
+		"[root] aws_ssm_parameter.validate_request_function_arn (expand)" [label = "aws_ssm_parameter.validate_request_function_arn", shape = "box"]
+		"[root] aws_ssm_parameter.vcs_provider (expand)" [label = "aws_ssm_parameter.vcs_provider", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/random\"]" [label = "provider[\"registry.terraform.io/hashicorp/random\"]", shape = "diamond"]
+		"[root] random_uuid.metrics_reporting_uuid (expand)" [label = "random_uuid.metrics_reporting_uuid", shape = "box"]
+		"[root] var.account_customizations_repo_branch" [label = "var.account_customizations_repo_branch", shape = "note"]
+		"[root] var.account_customizations_repo_name" [label = "var.account_customizations_repo_name", shape = "note"]
+		"[root] var.account_factory_product_name" [label = "var.account_factory_product_name", shape = "note"]
+		"[root] var.account_provisioning_customizations_repo_branch" [label = "var.account_provisioning_customizations_repo_branch", shape = "note"]
+		"[root] var.account_provisioning_customizations_repo_name" [label = "var.account_provisioning_customizations_repo_name", shape = "note"]
+		"[root] var.account_request_repo_branch" [label = "var.account_request_repo_branch", shape = "note"]
+		"[root] var.account_request_repo_name" [label = "var.account_request_repo_name", shape = "note"]
+		"[root] var.aft_account_provisioning_framework_sfn_name" [label = "var.aft_account_provisioning_framework_sfn_name", shape = "note"]
+		"[root] var.aft_administrator_role_name" [label = "var.aft_administrator_role_name", shape = "note"]
+		"[root] var.aft_config_backend_bucket_id" [label = "var.aft_config_backend_bucket_id", shape = "note"]
+		"[root] var.aft_config_backend_kms_key_id" [label = "var.aft_config_backend_kms_key_id", shape = "note"]
+		"[root] var.aft_config_backend_primary_region" [label = "var.aft_config_backend_primary_region", shape = "note"]
+		"[root] var.aft_config_backend_secondary_region" [label = "var.aft_config_backend_secondary_region", shape = "note"]
+		"[root] var.aft_config_backend_table_id" [label = "var.aft_config_backend_table_id", shape = "note"]
+		"[root] var.aft_controltower_events_table_name" [label = "var.aft_controltower_events_table_name", shape = "note"]
+		"[root] var.aft_customizations_execute_pipeline_function_arn" [label = "var.aft_customizations_execute_pipeline_function_arn", shape = "note"]
+		"[root] var.aft_customizations_get_pipeline_executions_function_arn" [label = "var.aft_customizations_get_pipeline_executions_function_arn", shape = "note"]
+		"[root] var.aft_customizations_identify_targets_function_arn" [label = "var.aft_customizations_identify_targets_function_arn", shape = "note"]
+		"[root] var.aft_execution_role_name" [label = "var.aft_execution_role_name", shape = "note"]
+		"[root] var.aft_failure_sns_topic_arn" [label = "var.aft_failure_sns_topic_arn", shape = "note"]
+		"[root] var.aft_feature_cloudtrail_data_events" [label = "var.aft_feature_cloudtrail_data_events", shape = "note"]
+		"[root] var.aft_feature_delete_default_vpcs_enabled" [label = "var.aft_feature_delete_default_vpcs_enabled", shape = "note"]
+		"[root] var.aft_feature_enterprise_support" [label = "var.aft_feature_enterprise_support", shape = "note"]
+		"[root] var.aft_framework_repo_git_ref" [label = "var.aft_framework_repo_git_ref", shape = "note"]
+		"[root] var.aft_framework_repo_url" [label = "var.aft_framework_repo_url", shape = "note"]
+		"[root] var.aft_invoke_aft_account_provisioning_framework_function_name" [label = "var.aft_invoke_aft_account_provisioning_framework_function_name", shape = "note"]
+		"[root] var.aft_log_key_arn" [label = "var.aft_log_key_arn", shape = "note"]
+		"[root] var.aft_logging_bucket_arn" [label = "var.aft_logging_bucket_arn", shape = "note"]
+		"[root] var.aft_management_account_id" [label = "var.aft_management_account_id", shape = "note"]
+		"[root] var.aft_metrics_reporting" [label = "var.aft_metrics_reporting", shape = "note"]
+		"[root] var.aft_request_audit_table_name" [label = "var.aft_request_audit_table_name", shape = "note"]
+		"[root] var.aft_request_metadata_table_name" [label = "var.aft_request_metadata_table_name", shape = "note"]
+		"[root] var.aft_request_queue_name" [label = "var.aft_request_queue_name", shape = "note"]
+		"[root] var.aft_request_table_name" [label = "var.aft_request_table_name", shape = "note"]
+		"[root] var.aft_session_name" [label = "var.aft_session_name", shape = "note"]
+		"[root] var.aft_sns_topic_arn" [label = "var.aft_sns_topic_arn", shape = "note"]
+		"[root] var.aft_version" [label = "var.aft_version", shape = "note"]
+		"[root] var.codestar_connection_arn" [label = "var.codestar_connection_arn", shape = "note"]
+		"[root] var.control_tower_event_logger_function_arn" [label = "var.control_tower_event_logger_function_arn", shape = "note"]
+		"[root] var.create_role_function_arn" [label = "var.create_role_function_arn", shape = "note"]
+		"[root] var.ct_audit_account_id" [label = "var.ct_audit_account_id", shape = "note"]
+		"[root] var.ct_log_archive_account_id" [label = "var.ct_log_archive_account_id", shape = "note"]
+		"[root] var.ct_management_account_id" [label = "var.ct_management_account_id", shape = "note"]
+		"[root] var.ct_primary_region" [label = "var.ct_primary_region", shape = "note"]
+		"[root] var.get_account_info_function_arn" [label = "var.get_account_info_function_arn", shape = "note"]
+		"[root] var.github_enterprise_url" [label = "var.github_enterprise_url", shape = "note"]
+		"[root] var.global_customizations_repo_branch" [label = "var.global_customizations_repo_branch", shape = "note"]
+		"[root] var.global_customizations_repo_name" [label = "var.global_customizations_repo_name", shape = "note"]
+		"[root] var.invoke_aft_account_provisioning_framework_function_arn" [label = "var.invoke_aft_account_provisioning_framework_function_arn", shape = "note"]
+		"[root] var.maximum_concurrent_customizations" [label = "var.maximum_concurrent_customizations", shape = "note"]
+		"[root] var.persist_metadata_function_arn" [label = "var.persist_metadata_function_arn", shape = "note"]
+		"[root] var.request_action_trigger_function_arn" [label = "var.request_action_trigger_function_arn", shape = "note"]
+		"[root] var.request_audit_trigger_function_arn" [label = "var.request_audit_trigger_function_arn", shape = "note"]
+		"[root] var.request_processor_function_arn" [label = "var.request_processor_function_arn", shape = "note"]
+		"[root] var.tag_account_function_arn" [label = "var.tag_account_function_arn", shape = "note"]
+		"[root] var.terraform_api_endpoint" [label = "var.terraform_api_endpoint", shape = "note"]
+		"[root] var.terraform_org_name" [label = "var.terraform_org_name", shape = "note"]
+		"[root] var.terraform_token" [label = "var.terraform_token", shape = "note"]
+		"[root] var.terraform_version" [label = "var.terraform_version", shape = "note"]
+		"[root] var.tf_distribution" [label = "var.tf_distribution", shape = "note"]
+		"[root] var.tf_version" [label = "var.tf_version", shape = "note"]
+		"[root] var.validate_request_function_arn" [label = "var.validate_request_function_arn", shape = "note"]
+		"[root] var.vcs_provider" [label = "var.vcs_provider", shape = "note"]
+		"[root] aws_ssm_parameter.account_customizations_repo_branch (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.account_customizations_repo_branch (expand)" -> "[root] var.account_customizations_repo_branch"
+		"[root] aws_ssm_parameter.account_customizations_repo_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.account_customizations_repo_name (expand)" -> "[root] var.account_customizations_repo_name"
+		"[root] aws_ssm_parameter.account_provisioning_customizations_repo_branch (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.account_provisioning_customizations_repo_branch (expand)" -> "[root] var.account_provisioning_customizations_repo_branch"
+		"[root] aws_ssm_parameter.account_provisioning_customizations_repo_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.account_provisioning_customizations_repo_name (expand)" -> "[root] var.account_provisioning_customizations_repo_name"
+		"[root] aws_ssm_parameter.account_request_repo_branch (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.account_request_repo_branch (expand)" -> "[root] var.account_request_repo_branch"
+		"[root] aws_ssm_parameter.account_request_repo_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.account_request_repo_name (expand)" -> "[root] var.account_request_repo_name"
+		"[root] aws_ssm_parameter.aft_account_factory_product_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_account_factory_product_name (expand)" -> "[root] var.account_factory_product_name"
+		"[root] aws_ssm_parameter.aft_account_provisioning_framework_sfn_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_account_provisioning_framework_sfn_name (expand)" -> "[root] var.aft_account_provisioning_framework_sfn_name"
+		"[root] aws_ssm_parameter.aft_administrator_role_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_administrator_role_name (expand)" -> "[root] var.aft_administrator_role_name"
+		"[root] aws_ssm_parameter.aft_config_backend_bucket_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_config_backend_bucket_id (expand)" -> "[root] var.aft_config_backend_bucket_id"
+		"[root] aws_ssm_parameter.aft_config_backend_kms_key_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_config_backend_kms_key_id (expand)" -> "[root] var.aft_config_backend_kms_key_id"
+		"[root] aws_ssm_parameter.aft_config_backend_primary_region (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_config_backend_primary_region (expand)" -> "[root] var.aft_config_backend_primary_region"
+		"[root] aws_ssm_parameter.aft_config_backend_secondary_region (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_config_backend_secondary_region (expand)" -> "[root] var.aft_config_backend_secondary_region"
+		"[root] aws_ssm_parameter.aft_config_backend_table_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_config_backend_table_id (expand)" -> "[root] var.aft_config_backend_table_id"
+		"[root] aws_ssm_parameter.aft_controltower_events_table_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_controltower_events_table_name (expand)" -> "[root] var.aft_controltower_events_table_name"
+		"[root] aws_ssm_parameter.aft_customizations_execute_pipeline_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_customizations_execute_pipeline_function_arn (expand)" -> "[root] var.aft_customizations_execute_pipeline_function_arn"
+		"[root] aws_ssm_parameter.aft_customizations_get_pipeline_executions_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_customizations_get_pipeline_executions_function_arn (expand)" -> "[root] var.aft_customizations_get_pipeline_executions_function_arn"
+		"[root] aws_ssm_parameter.aft_customizations_identify_targets_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_customizations_identify_targets_function_arn (expand)" -> "[root] var.aft_customizations_identify_targets_function_arn"
+		"[root] aws_ssm_parameter.aft_execution_role_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_execution_role_name (expand)" -> "[root] var.aft_execution_role_name"
+		"[root] aws_ssm_parameter.aft_failure_sns_topic_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_failure_sns_topic_arn (expand)" -> "[root] var.aft_failure_sns_topic_arn"
+		"[root] aws_ssm_parameter.aft_feature_cloudtrail_data_events (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_feature_cloudtrail_data_events (expand)" -> "[root] var.aft_feature_cloudtrail_data_events"
+		"[root] aws_ssm_parameter.aft_feature_delete_default_vpcs_enabled (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_feature_delete_default_vpcs_enabled (expand)" -> "[root] var.aft_feature_delete_default_vpcs_enabled"
+		"[root] aws_ssm_parameter.aft_feature_enterprise_support (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_feature_enterprise_support (expand)" -> "[root] var.aft_feature_enterprise_support"
+		"[root] aws_ssm_parameter.aft_framework_repo_git_ref (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_framework_repo_git_ref (expand)" -> "[root] var.aft_framework_repo_git_ref"
+		"[root] aws_ssm_parameter.aft_framework_repo_url (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_framework_repo_url (expand)" -> "[root] var.aft_framework_repo_url"
+		"[root] aws_ssm_parameter.aft_invoke_aft_account_provisioning_framework_lambda_function_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_invoke_aft_account_provisioning_framework_lambda_function_name (expand)" -> "[root] var.aft_invoke_aft_account_provisioning_framework_function_name"
+		"[root] aws_ssm_parameter.aft_log_key_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_log_key_arn (expand)" -> "[root] var.aft_log_key_arn"
+		"[root] aws_ssm_parameter.aft_logging_bucket_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_logging_bucket_arn (expand)" -> "[root] var.aft_logging_bucket_arn"
+		"[root] aws_ssm_parameter.aft_management_account_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_management_account_id (expand)" -> "[root] var.aft_management_account_id"
+		"[root] aws_ssm_parameter.aft_maximum_concurrent_customizations (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_maximum_concurrent_customizations (expand)" -> "[root] var.maximum_concurrent_customizations"
+		"[root] aws_ssm_parameter.aft_metrics_reporting (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_metrics_reporting (expand)" -> "[root] var.aft_metrics_reporting"
+		"[root] aws_ssm_parameter.aft_metrics_reporting_uuid (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_metrics_reporting_uuid (expand)" -> "[root] random_uuid.metrics_reporting_uuid (expand)"
+		"[root] aws_ssm_parameter.aft_request_action_trigger_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_request_action_trigger_function_arn (expand)" -> "[root] var.request_action_trigger_function_arn"
+		"[root] aws_ssm_parameter.aft_request_audit_table_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_request_audit_table_name (expand)" -> "[root] var.aft_request_audit_table_name"
+		"[root] aws_ssm_parameter.aft_request_metadata_table_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_request_metadata_table_name (expand)" -> "[root] var.aft_request_metadata_table_name"
+		"[root] aws_ssm_parameter.aft_request_queue_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_request_queue_name (expand)" -> "[root] var.aft_request_queue_name"
+		"[root] aws_ssm_parameter.aft_request_table_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_request_table_name (expand)" -> "[root] var.aft_request_table_name"
+		"[root] aws_ssm_parameter.aft_session_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_session_name (expand)" -> "[root] var.aft_session_name"
+		"[root] aws_ssm_parameter.aft_sns_topic_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_sns_topic_arn (expand)" -> "[root] var.aft_sns_topic_arn"
+		"[root] aws_ssm_parameter.aft_version (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.aft_version (expand)" -> "[root] var.aft_version"
+		"[root] aws_ssm_parameter.codestar_connection_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.codestar_connection_arn (expand)" -> "[root] var.codestar_connection_arn"
+		"[root] aws_ssm_parameter.control_tower_event_logger_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.control_tower_event_logger_function_arn (expand)" -> "[root] var.control_tower_event_logger_function_arn"
+		"[root] aws_ssm_parameter.create_role_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.create_role_function_arn (expand)" -> "[root] var.create_role_function_arn"
+		"[root] aws_ssm_parameter.ct_audit_account_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.ct_audit_account_id (expand)" -> "[root] var.ct_audit_account_id"
+		"[root] aws_ssm_parameter.ct_log_archive_account_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.ct_log_archive_account_id (expand)" -> "[root] var.ct_log_archive_account_id"
+		"[root] aws_ssm_parameter.ct_management_account_id (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.ct_management_account_id (expand)" -> "[root] var.ct_management_account_id"
+		"[root] aws_ssm_parameter.ct_primary_region (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.ct_primary_region (expand)" -> "[root] var.ct_primary_region"
+		"[root] aws_ssm_parameter.get_account_info_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.get_account_info_function_arn (expand)" -> "[root] var.get_account_info_function_arn"
+		"[root] aws_ssm_parameter.github_enterprise_url (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.github_enterprise_url (expand)" -> "[root] var.github_enterprise_url"
+		"[root] aws_ssm_parameter.global_customizations_repo_branch (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.global_customizations_repo_branch (expand)" -> "[root] var.global_customizations_repo_branch"
+		"[root] aws_ssm_parameter.global_customizations_repo_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.global_customizations_repo_name (expand)" -> "[root] var.global_customizations_repo_name"
+		"[root] aws_ssm_parameter.invoke_aft_account_provisioning_framework_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.invoke_aft_account_provisioning_framework_function_arn (expand)" -> "[root] var.invoke_aft_account_provisioning_framework_function_arn"
+		"[root] aws_ssm_parameter.persist_metadata_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.persist_metadata_function_arn (expand)" -> "[root] var.persist_metadata_function_arn"
+		"[root] aws_ssm_parameter.request_audit_trigger_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.request_audit_trigger_function_arn (expand)" -> "[root] var.request_audit_trigger_function_arn"
+		"[root] aws_ssm_parameter.request_processor_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.request_processor_function_arn (expand)" -> "[root] var.request_processor_function_arn"
+		"[root] aws_ssm_parameter.tag_account_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.tag_account_function_arn (expand)" -> "[root] var.tag_account_function_arn"
+		"[root] aws_ssm_parameter.terraform_api_endpoint (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.terraform_api_endpoint (expand)" -> "[root] var.terraform_api_endpoint"
+		"[root] aws_ssm_parameter.terraform_org_name (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.terraform_org_name (expand)" -> "[root] var.terraform_org_name"
+		"[root] aws_ssm_parameter.terraform_token (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.terraform_token (expand)" -> "[root] var.terraform_token"
+		"[root] aws_ssm_parameter.tf_distribution (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.tf_distribution (expand)" -> "[root] var.tf_distribution"
+		"[root] aws_ssm_parameter.tf_version (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.tf_version (expand)" -> "[root] var.tf_version"
+		"[root] aws_ssm_parameter.validate_request_function_arn (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.validate_request_function_arn (expand)" -> "[root] var.validate_request_function_arn"
+		"[root] aws_ssm_parameter.vcs_provider (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ssm_parameter.vcs_provider (expand)" -> "[root] var.vcs_provider"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.account_customizations_repo_branch (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.account_customizations_repo_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.account_provisioning_customizations_repo_branch (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.account_provisioning_customizations_repo_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.account_request_repo_branch (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.account_request_repo_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_account_factory_product_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_account_provisioning_framework_sfn_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_administrator_role_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_config_backend_bucket_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_config_backend_kms_key_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_config_backend_primary_region (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_config_backend_secondary_region (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_config_backend_table_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_controltower_events_table_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_customizations_execute_pipeline_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_customizations_get_pipeline_executions_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_customizations_identify_targets_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_execution_role_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_failure_sns_topic_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_feature_cloudtrail_data_events (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_feature_delete_default_vpcs_enabled (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_feature_enterprise_support (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_framework_repo_git_ref (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_framework_repo_url (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_invoke_aft_account_provisioning_framework_lambda_function_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_log_key_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_logging_bucket_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_management_account_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_maximum_concurrent_customizations (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_metrics_reporting (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_metrics_reporting_uuid (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_request_action_trigger_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_request_audit_table_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_request_metadata_table_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_request_queue_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_request_table_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_session_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_sns_topic_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.aft_version (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.codestar_connection_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.control_tower_event_logger_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.create_role_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.ct_audit_account_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.ct_log_archive_account_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.ct_management_account_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.ct_primary_region (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.get_account_info_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.github_enterprise_url (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.global_customizations_repo_branch (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.global_customizations_repo_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.invoke_aft_account_provisioning_framework_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.persist_metadata_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.request_audit_trigger_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.request_processor_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.tag_account_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.terraform_api_endpoint (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.terraform_org_name (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.terraform_token (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.tf_distribution (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.tf_version (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.validate_request_function_arn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ssm_parameter.vcs_provider (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/random\"] (close)" -> "[root] random_uuid.metrics_reporting_uuid (expand)"
+		"[root] random_uuid.metrics_reporting_uuid (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/random\"]"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/random\"] (close)"
+		"[root] root" -> "[root] var.terraform_version"
+	}
+}
+

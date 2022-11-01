@@ -1,0 +1,96 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_codebuild_project.codebuild (expand)" [label = "aws_codebuild_project.codebuild", shape = "box"]
+		"[root] aws_iam_role.codebuild (expand)" [label = "aws_iam_role.codebuild", shape = "box"]
+		"[root] aws_iam_role.codebuild_invoker_lambda_role (expand)" [label = "aws_iam_role.codebuild_invoker_lambda_role", shape = "box"]
+		"[root] aws_iam_role_policy.codebuild (expand)" [label = "aws_iam_role_policy.codebuild", shape = "box"]
+		"[root] aws_iam_role_policy.codebuild_invoker_policy (expand)" [label = "aws_iam_role_policy.codebuild_invoker_policy", shape = "box"]
+		"[root] aws_iam_role_policy_attachment.codebuild_invoker_VPC_access (expand)" [label = "aws_iam_role_policy_attachment.codebuild_invoker_VPC_access", shape = "box"]
+		"[root] aws_lambda_function.codebuild_invoker (expand)" [label = "aws_lambda_function.codebuild_invoker", shape = "box"]
+		"[root] aws_lambda_layer_version.layer_version (expand)" [label = "aws_lambda_layer_version.layer_version", shape = "box"]
+		"[root] data.aws_caller_identity.session (expand)" [label = "data.aws_caller_identity.session", shape = "box"]
+		"[root] data.aws_lambda_invocation.invoke_codebuild_job (expand)" [label = "data.aws_lambda_invocation.invoke_codebuild_job", shape = "box"]
+		"[root] data.aws_partition.current (expand)" [label = "data.aws_partition.current", shape = "box"]
+		"[root] data.local_file.aft_lambda_layer (expand)" [label = "data.local_file.aft_lambda_layer", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"]" [label = "provider[\"registry.terraform.io/hashicorp/local\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/random\"]" [label = "provider[\"registry.terraform.io/hashicorp/random\"]", shape = "diamond"]
+		"[root] random_string.resource_suffix (expand)" [label = "random_string.resource_suffix", shape = "box"]
+		"[root] var.aft_kms_key_arn" [label = "var.aft_kms_key_arn", shape = "note"]
+		"[root] var.aft_tf_aws_customizations_module_git_ref_ssm_path" [label = "var.aft_tf_aws_customizations_module_git_ref_ssm_path", shape = "note"]
+		"[root] var.aft_tf_aws_customizations_module_url_ssm_path" [label = "var.aft_tf_aws_customizations_module_url_ssm_path", shape = "note"]
+		"[root] var.aft_version" [label = "var.aft_version", shape = "note"]
+		"[root] var.aft_vpc_default_sg" [label = "var.aft_vpc_default_sg", shape = "note"]
+		"[root] var.aft_vpc_id" [label = "var.aft_vpc_id", shape = "note"]
+		"[root] var.aft_vpc_private_subnets" [label = "var.aft_vpc_private_subnets", shape = "note"]
+		"[root] var.aws_region" [label = "var.aws_region", shape = "note"]
+		"[root] var.builder_archive_hash" [label = "var.builder_archive_hash", shape = "note"]
+		"[root] var.builder_archive_path" [label = "var.builder_archive_path", shape = "note"]
+		"[root] var.lambda_layer_codebuild_delay" [label = "var.lambda_layer_codebuild_delay", shape = "note"]
+		"[root] var.lambda_layer_name" [label = "var.lambda_layer_name", shape = "note"]
+		"[root] var.lambda_layer_python_version" [label = "var.lambda_layer_python_version", shape = "note"]
+		"[root] var.s3_bucket_name" [label = "var.s3_bucket_name", shape = "note"]
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] aws_iam_role.codebuild (expand)"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] data.local_file.aft_lambda_layer (expand)"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] local.target_id (expand)"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_tf_aws_customizations_module_git_ref_ssm_path"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_tf_aws_customizations_module_url_ssm_path"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_version"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_vpc_id"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.lambda_layer_python_version"
+		"[root] aws_codebuild_project.codebuild (expand)" -> "[root] var.s3_bucket_name"
+		"[root] aws_iam_role.codebuild (expand)" -> "[root] local.common_name (expand)"
+		"[root] aws_iam_role.codebuild (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.codebuild_invoker_lambda_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role_policy.codebuild (expand)" -> "[root] aws_iam_role.codebuild (expand)"
+		"[root] aws_iam_role_policy.codebuild (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_iam_role_policy.codebuild (expand)" -> "[root] local.account_id (expand)"
+		"[root] aws_iam_role_policy.codebuild (expand)" -> "[root] var.aft_kms_key_arn"
+		"[root] aws_iam_role_policy.codebuild (expand)" -> "[root] var.aws_region"
+		"[root] aws_iam_role_policy.codebuild (expand)" -> "[root] var.s3_bucket_name"
+		"[root] aws_iam_role_policy.codebuild_invoker_policy (expand)" -> "[root] aws_codebuild_project.codebuild (expand)"
+		"[root] aws_iam_role_policy.codebuild_invoker_policy (expand)" -> "[root] aws_iam_role.codebuild_invoker_lambda_role (expand)"
+		"[root] aws_iam_role_policy.codebuild_invoker_policy (expand)" -> "[root] local.account_id (expand)"
+		"[root] aws_iam_role_policy.codebuild_invoker_policy (expand)" -> "[root] local.codebuild_invoker_function_name (expand)"
+		"[root] aws_iam_role_policy.codebuild_invoker_policy (expand)" -> "[root] var.aws_region"
+		"[root] aws_iam_role_policy_attachment.codebuild_invoker_VPC_access (expand)" -> "[root] aws_iam_role.codebuild_invoker_lambda_role (expand)"
+		"[root] aws_iam_role_policy_attachment.codebuild_invoker_VPC_access (expand)" -> "[root] data.aws_partition.current (expand)"
+		"[root] aws_lambda_function.codebuild_invoker (expand)" -> "[root] aws_iam_role.codebuild_invoker_lambda_role (expand)"
+		"[root] aws_lambda_function.codebuild_invoker (expand)" -> "[root] local.codebuild_invoker_function_name (expand)"
+		"[root] aws_lambda_function.codebuild_invoker (expand)" -> "[root] var.aft_vpc_default_sg"
+		"[root] aws_lambda_function.codebuild_invoker (expand)" -> "[root] var.aft_vpc_private_subnets"
+		"[root] aws_lambda_function.codebuild_invoker (expand)" -> "[root] var.builder_archive_hash"
+		"[root] aws_lambda_function.codebuild_invoker (expand)" -> "[root] var.builder_archive_path"
+		"[root] aws_lambda_layer_version.layer_version (expand)" -> "[root] data.aws_lambda_invocation.invoke_codebuild_job (expand)"
+		"[root] data.aws_caller_identity.session (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_lambda_invocation.invoke_codebuild_job (expand)" -> "[root] aws_codebuild_project.codebuild (expand)"
+		"[root] data.aws_lambda_invocation.invoke_codebuild_job (expand)" -> "[root] aws_lambda_function.codebuild_invoker (expand)"
+		"[root] data.aws_partition.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.local_file.aft_lambda_layer (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"]"
+		"[root] local.account_id (expand)" -> "[root] data.aws_caller_identity.session (expand)"
+		"[root] local.common_name (expand)" -> "[root] random_string.resource_suffix (expand)"
+		"[root] local.common_name (expand)" -> "[root] var.lambda_layer_name"
+		"[root] output.lambda_layer_build_status (expand)" -> "[root] data.aws_lambda_invocation.invoke_codebuild_job (expand)"
+		"[root] output.layer_version_arn (expand)" -> "[root] aws_lambda_layer_version.layer_version (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.codebuild (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.codebuild_invoker_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy_attachment.codebuild_invoker_VPC_access (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_lambda_layer_version.layer_version (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)" -> "[root] data.local_file.aft_lambda_layer (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/random\"] (close)" -> "[root] random_string.resource_suffix (expand)"
+		"[root] random_string.resource_suffix (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/random\"]"
+		"[root] root" -> "[root] output.lambda_layer_build_status (expand)"
+		"[root] root" -> "[root] output.layer_version_arn (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/local\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/random\"] (close)"
+		"[root] root" -> "[root] var.lambda_layer_codebuild_delay"
+	}
+}
+
